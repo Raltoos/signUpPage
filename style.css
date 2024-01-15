@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+}
+
+.leftPanel{
+    width: 30vw;
+    height: 100vh;
+    background-image: url("bgImage.jpg");
+    background-size: cover;
+}
+
+.leftPanel .logoBar{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0,0,0,.5);
+
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Norse';
+    font-size: 4rem;
+}
+
+.logo{
+    height: 100%;
+    width: 25%;
+    background-image: url("odin-lined.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+.rightPanel{
+    height: 100vh;
+    width: 70vw;
+    background-color: rgb(255, 253, 253);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    padding: 15px 25px;
+}
+
+.form form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form form div{
+    flex-basis: 50%;
+}
+
+.text{
+    text-align: left;
+    max-width: 54ch;
+    height: 20vh;
+    overflow: hidden;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4vw;
+    font-weight: 900;
+    position: absolute;
+    top: 10vh;
+    margin-left: 15px;
+}
+
+.text p{
+    margin-bottom: 10px;
+}
+
+.text p:last-child{
+    margin-bottom: 50px;
+}
+
+.form label{
+    font-size: small;
+}
+
+.form input{
+    border: 1px solid #E5E7EB;
+    font-size: larger;
+}
+
+.form input:focus {
+    outline: none;
+    border: 1px solid rgb(63, 63, 245);
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}
+
+form div{
+    font-weight: 540;
+    margin-top: 10px;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.existingAccount {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: 540;
+}
+
+.existingAccount a{
+    font-weight: 800;
+    text-decoration: none;
+    color: #596D48;
+}
+
+.error {
+    border: 1px solid red;
+}
